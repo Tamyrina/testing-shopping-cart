@@ -22,4 +22,14 @@ public class ShoppingCartTest {
 
         assertEquals(10.0, cart.getTotalPrice());
     }
+    
+    @Test
+    void cartWithMultipleItemsReturnsCorrectTotalPrice() {
+        ShoppingCart cart = new ShoppingCart();
+
+        cart.addItem(new CartItem("Apfel", 2.50, 4));
+        cart.addItem(new CartItem("Banane", 1.50, 2));
+
+        assertEquals(13.0, cart.getTotalPrice());
+    }
 }
