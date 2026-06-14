@@ -14,8 +14,8 @@ Folgende Testfälle wurden umgesetzt:
 
 Relevante Dateien:
 
-* `CartItem.java`
-* `CartItemTest.java`
+- [CartItem.java](src/shoppingcart/CartItem.java)
+- [CartItemTest.java](src/shoppingcart/CartItemTest.java)
 
 ---
 
@@ -34,8 +34,8 @@ Die Entwicklungsschritte sind in der Git-Historie dokumentiert.
 
 Relevante Dateien:
 
-* `ShoppingCart.java`
-* `ShoppingCartTest.java`
+- [ShoppingCart.java](src/shoppingcart/ShoppingCart.java)
+- [ShoppingCartTest.java](src/shoppingcart/ShoppingCartTest.java)
 
 ---
 
@@ -47,8 +47,8 @@ Die Methode repräsentiert eine externe Abhängigkeit, beispielsweise einen Raba
 
 Relevante Dateien:
 
-* `DiscountService.java`
-* `ShoppingCartMockTest.java`
+- [DiscountService.java](src/shoppingcart/DiscountService.java)
+- [ShoppingCartMockTest.java](src/shoppingcart/ShoppingCartMockTest.java)
 
 ## Nutzung von AI
 
