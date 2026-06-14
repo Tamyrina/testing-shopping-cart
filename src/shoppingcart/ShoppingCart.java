@@ -12,6 +12,10 @@ public class ShoppingCart {
     }
 
     public double getTotalPrice() {
+        return calculateTotalPrice();
+    }
+
+    private double calculateTotalPrice() {
         double total = 0.0;
 
         for (CartItem item : items) {
