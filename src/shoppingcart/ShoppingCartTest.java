@@ -13,4 +13,13 @@ public class ShoppingCartTest {
 
         assertEquals(0.0, total);
     }
+    
+    @Test
+    void cartWithOneItemReturnsCorrectTotalPrice() {
+        ShoppingCart cart = new ShoppingCart();
+
+        cart.addItem(new CartItem("Apfel", 2.50, 4));
+
+        assertEquals(10.0, cart.getTotalPrice());
+    }
 }
