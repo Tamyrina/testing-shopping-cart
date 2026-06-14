@@ -49,3 +49,27 @@ Relevante Dateien:
 
 * `DiscountService.java`
 * `ShoppingCartMockTest.java`
+
+## Nutzung von AI
+
+Für die Bearbeitung wurde ChatGPT unterstützend eingesetzt.
+
+### Verwendeter Prompt
+
+"Erstelle für eine Testaufgabe in Java eine einfache Klasse für einen Warenkorbartikel (CartItem) mit Preis, Anzahl und Gesamtpreisberechnung. Ergänze passende JUnit-Tests, darunter mindestens einen Test für eine Exception."
+
+### AI-Ausgabe
+
+Die KI schlug eine Klasse `CartItem` mit den Attributen Name, Preis und Anzahl vor. Zusätzlich wurde eine Methode zur Berechnung des Gesamtpreises sowie Unit-Tests mit JUnit vorgeschlagen.
+
+### Eigene Kritik und Anpassungen
+
+Die vorgeschlagene Lösung deckte die Grundfunktionalität ab, berücksichtigte jedoch zunächst nicht alle Randfälle. Für die Aufgabe wurden daher zusätzliche Prüfungen ergänzt:
+
+* negativer Preis führt zu einer `IllegalArgumentException`
+* Menge 0 führt zu einer `IllegalArgumentException`
+
+Außerdem wurde die Lösung um einen Warenkorb (`ShoppingCart`) erweitert und im TDD-Stil weiterentwickelt. Die Git-Historie dokumentiert die Schritte Red → Green → Refactor.
+
+Für die Mocking-Aufgabe wurde zusätzlich ein `DiscountService` eingeführt. Statt einer externen Abhängigkeit wurde ein Mock verwendet, um reproduzierbare Testergebnisse zu erhalten.
+
