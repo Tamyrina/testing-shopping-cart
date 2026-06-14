@@ -6,6 +6,14 @@ import java.util.List;
 public class ShoppingCart {
 
     private List<CartItem> items = new ArrayList<>();
+    private DiscountService discountService;
+
+    public ShoppingCart() {
+    }
+
+    public ShoppingCart(DiscountService discountService) {
+        this.discountService = discountService;
+    }
 
     public void addItem(CartItem item) {
         items.add(item);
@@ -13,6 +21,10 @@ public class ShoppingCart {
 
     public double getTotalPrice() {
         return calculateTotalPrice();
+    }
+
+    public double getDiscountedTotalPrice() {
+        return getTotalPrice() - discountService.getDiscount();
     }
 
     private double calculateTotalPrice() {
