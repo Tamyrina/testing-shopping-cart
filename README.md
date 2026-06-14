@@ -6,7 +6,7 @@ Repository zur Bearbeitung der Einsendeaufgabe TST-E1.
 
 Für A1 wurde die Klasse `CartItem` entwickelt und mit JUnit 5 getestet.
 
-Folgende Testfälle wurden umgesetzt:
+Folgende Testfälle wurden programmiert:
 
 * korrekte Berechnung des Gesamtpreises
 * negativer Preis führt zu einer Exception
@@ -41,9 +41,7 @@ Relevante Dateien:
 
 ## A3 – Mocking
 
-Für A3 wurde die Methode `getDiscount()` des `DiscountService` gemockt.
-
-Die Methode repräsentiert eine externe Abhängigkeit, beispielsweise einen Rabattdienst über Netzwerk oder Datenbank. Durch den Mock kann der Test unabhängig von externen Systemen ausgeführt werden und liefert reproduzierbare Ergebnisse.
+Die Methode getDiscount() des DiscountService wurde gemockt, da sie eine externe Abhängigkeit repräsentiert. In einer realen Anwendung könnte der Rabatt beispielsweise über einen Webservice oder eine Datenbank ermittelt werden. Durch das Mocking kann der Test unabhängig von externen Systemen ausgeführt werden und liefert reproduzierbare Ergebnisse.
 
 Relevante Dateien:
 
