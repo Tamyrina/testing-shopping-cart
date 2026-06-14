@@ -48,6 +48,8 @@ Relevante Dateien:
 - [DiscountService.java](src/shoppingcart/DiscountService.java)
 - [ShoppingCartMockTest.java](src/shoppingcart/ShoppingCartMockTest.java)
 
+---
+
 ## Nutzung von AI
 
 Für die Bearbeitung wurde ChatGPT unterstützend eingesetzt.
